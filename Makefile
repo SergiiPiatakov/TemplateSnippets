@@ -2,7 +2,7 @@ CXX		= g++
 
 .PHONY all: 001 002 003 004 \
 			005 006 007 008 \
-			009 010
+			009 010 011
 
 001:
 	$(CXX) -Wall -Wextra 001_main.cpp -o 001_main
@@ -34,6 +34,9 @@ CXX		= g++
 010:
 	$(CXX) -Wall -Wextra 010_main.cpp -std=c++11 -o 010_main
 
+011:
+	$(CXX) -Wall -Wextra 011_main.cpp -o 011_main
+
 .PHONY clean:
 	$(RM) 001_main
 	$(RM) 002_main
@@ -45,3 +48,4 @@ CXX		= g++
 	$(RM) 008_main
 	$(RM) 009_main
 	$(RM) 010_main
+	$(RM) 011_main
