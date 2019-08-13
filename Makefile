@@ -2,7 +2,9 @@ CXX		= g++
 
 .PHONY all: 001 002 003 004 \
 			005 006 007 008 \
-			009 010 011
+			009 010 011 012 \
+			013 014 015 016 \
+			017 018
 
 001:
 	$(CXX) -Wall -Wextra 001_main.cpp -o 001_main
@@ -32,10 +34,31 @@ CXX		= g++
 	$(CXX) -Wall -Wextra 009_main.cpp -Wno-unused-variable -o 009_main
 
 010:
-	$(CXX) -Wall -Wextra 010_main.cpp -std=c++11 -o 010_main
+	$(CXX) -Wall -Wextra -std=c++11 010_main.cpp -o 010_main
 
 011:
 	$(CXX) -Wall -Wextra 011_main.cpp -o 011_main
+
+012:
+	$(CXX) -Wall -Wextra -std=c++11 012_main.cpp -Wno-unused-variable -o 012_main
+
+013:
+	$(CXX) -Wall -Wextra -std=c++11 013_main.cpp -o 013_main
+
+014:
+	$(CXX) -Wall -Wextra -std=c++11 014_main.cpp -o 014_main
+
+015:
+	$(CXX) -Wall -Wextra -std=c++11 015_main.cpp -o 015_main
+
+016:
+	$(CXX) -Wall -Wextra 016_main.cpp -o 016_main
+
+017:
+	$(CXX) -Wall -Wextra 017_main.cpp -o 017_main
+
+018:
+	$(CXX) -Wall -Wextra 018_main.cpp -o 018_main
 
 .PHONY clean:
 	$(RM) 001_main
@@ -49,3 +72,10 @@ CXX		= g++
 	$(RM) 009_main
 	$(RM) 010_main
 	$(RM) 011_main
+	$(RM) 012_main
+	$(RM) 013_main
+	$(RM) 014_main
+	$(RM) 015_main
+	$(RM) 016_main
+	$(RM) 017_main
+	$(RM) 018_main
