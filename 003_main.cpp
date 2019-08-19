@@ -52,7 +52,7 @@ int main (int, char **)
     // Realy?
     // shy.age;
     // error: ‘unsigned char Person::age’ is protected
-    // OK, I'll check your ID.
+    // OK, I'll check it in other way.
     Serializer <Person> x (shy);
     //x.data [0];
 
