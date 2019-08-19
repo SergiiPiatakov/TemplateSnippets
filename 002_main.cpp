@@ -52,7 +52,7 @@ int main (int argc, char **)
     //     \ /
     //      x 
     //     / `
-    // 0xa     0xe
+    // 0xe     0xa
     //  ^       ^
     //  |       |
     //  c       d
@@ -68,7 +68,7 @@ int main (int argc, char **)
     //  c       d
     //
     // After:
-    //  2       3
+    //  3       2
     //  ^       ^
     //  |       |   
     // 0xa     0xe
